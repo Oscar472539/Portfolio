@@ -332,6 +332,8 @@ vil skal du ændre på det sidste tal og sætte det i decimal procenter */
 .column {
     width: 36%;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .dif {
@@ -353,6 +355,7 @@ vil skal du ændre på det sidste tal og sætte det i decimal procenter */
     top: 70%;
     left: 25%;
     transform: rotate(15deg);
+    color: white;
 }
 
 .after {
@@ -360,19 +363,35 @@ vil skal du ændre på det sidste tal og sætte det i decimal procenter */
     top: 50%;
     right: 20%;
     transform: rotate(-15deg);
+    color: white;
 }
 
 .dif-img {
     width: 100%;
-    padding: 2rem;
+    padding: 0rem 0.5rem;
     border: 0px solid black;
-
 }
 
 .edit {
-    display: flex;
     position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
     padding: 0;
+}
+
+.marina {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .edit h2 {
@@ -380,6 +399,7 @@ vil skal du ændre på det sidste tal og sætte det i decimal procenter */
     top: 200px;
     right: 350px;
     background-color: rgba(256, 256, 256, 0);
+    color: white;
     font-size: 4rem;
     letter-spacing: 5px;
     font-weight: 300;
@@ -428,51 +448,51 @@ vil skal du ændre på det sidste tal og sætte det i decimal procenter */
 
 .treehouse {
     position: absolute;
-    top: 2%;
-    left: 37.5%;
-    width: 25%;
+    top: 7%;
+    left: 15%;
+    width: 15%;
 }
 
 .kayak {
     position: absolute;
-    top: 2%;
-    left: 10%;
+    top: 20%;
+    left: 36.5%;
     width: 25%;
 }
 
 .fire {
     position: absolute;
-    top: 2%;
-    right: 10%;
-    width: 25%;
+    top: 15%;
+    right: 20%;
+    width: 15%;
 }
 
 .bottle {
     position: absolute;
-    top: 39.2%;
-    left: 38.5%;
-    width: 23%;
+    top: 45%;
+    left: 18%;
+    width: 17%;
 }
 
 .house {
     position: absolute;
-    top: 43.5%;
-    right: 15%;
-    width: 20%;
+    top: 50%;
+    right: 17%;
+    width: 15%;
 }
 
 .road {
     position: absolute;
-    top: 79%;
+    top: 75%;
     left: 25%;
     width: 13%;
 }
 
 .color {
     position: absolute;
-    top: 43.5%;
-    left: 15%;
-    width: 20%;
+    top: 65%;
+    left: 40%;
+    width: 17%;
 }
 
 .glass {
@@ -485,6 +505,12 @@ vil skal du ændre på det sidste tal og sætte det i decimal procenter */
 .drone {
     position: relative;
     width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .drone img {
@@ -495,7 +521,7 @@ vil skal du ændre på det sidste tal og sætte det i decimal procenter */
     position: absolute;
     top: 43%;
     left: 53%;
-    display: block
+    display: block;
     z-index: 1;
 }
 
@@ -543,3 +569,64 @@ vil skal du ændre på det sidste tal og sætte det i decimal procenter */
     transform: scaleX(0.98);
     transform-origin: center;
 }
+
+.underside {
+    padding: 5%;
+}
+
+.sidehoved {
+    width: 100%;
+    letter-spacing: 0.2rem;
+}
+
+.info {
+    padding: 0% 5%;
+    margin-top: 8%;
+    display: flex;
+    position: relative;
+}
+
+.info-billede img {
+    width: 45%;
+    position: absolute;
+    right: 5%;
+    border-radius: 50% 0% 50% 50%;
+}
+
+.info-billede h1 {
+    float: right;
+    font-size: 3.5rem;
+    font-weight: 500;
+    position: absolute;
+    top: -25%;
+    right: 5%;
+    letter-spacing: 0.3rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.info-spec {
+    width: 100%;
+}
+
+.info-spec h2 {
+    font-weight: 100;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.info-spec h4 {
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+/*.info-spec h2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 3px;
+    bottom: 1px;
+    background-color: var(--main-bg1);
+}*/
